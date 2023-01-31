@@ -1,7 +1,324 @@
 <!DOCTYPE html>
+
 <html>
+
+<head>
+	<title>Neha Sharma</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+
+		.background {
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo img {
+			width: 180px;
+			border-radius: 50px;
+		}
+
+		.nav-list li {
+			list-style: none;
+			padding: 26px 30px;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.nav-list li a:hover {
+			color: grey;
+		}
+
+		.rightnav {
+			width: 30%;
+			text-align: right;
+		}
+
+		#search {
+			padding: 5px;
+			font-size: 17px;
+			border: 2px solid grey;
+			border-radius: 9px;
+		}
+
+		.firstsection {
+			background-color: green;
+			height: 400px;
+		}
+
+		.secondsection {
+			background-color: blue;
+			height: 400px;
+		}
+
+		.box-main {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: black;
+			max-width: 80%;
+			margin: auto;
+			height: 80%;
+		}
+
+		.firsthalf {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.secondhalf {
+			width: 30%;
+		}
+
+		.secondhalf img {
+			width: 70%;
+			border: 4px solid white;
+			border-radius: 150px;
+			display: block;
+			margin: auto;
+		}
+
+		.text-big {
+			font-family: 'Piazzolla', serif;
+			font-weight: bold;
+			font-size: 35px;
+		}
+
+		.text-small {
+			font-size: 18px;
+		}
+
+		.btn {
+			padding: 8px 20px;
+			margin: 7px 0;
+			border: 2px solid white;
+			border-radius: 8px;
+			background: none;
+			color: white;
+			cursor: pointer;
+		}
+
+		.btn-sm {
+			padding: 6px 10px;
+			vertical-align: middle;
+		}
+
+		.section {
+			height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 90%;
+			margin: auto;
+		}
+
+		.section-Left {
+			flex-direction: row-reverse;
+		}
+
+		.paras {
+			padding: 0px 65px;
+		}
+
+		.thumbnail img {
+			width: 250px;
+			border: 2px solid black;
+			border-radius: 26px;
+			margin-top: 19px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.text-footer {
+			text-align: center;
+			padding: 30px 0;
+			font-family: 'Ubuntu', sans-serif;
+			display: flex;
+			justify-content: center;
+			color: white;
+		}
+	</style>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo">
+				<img src= "logo.png">
+			</div>
+			<li><a href="#bio">Bio</a></li>
+			<li><a href="#research">Research</a></li>
+			<li><a href="#teaching">Teaching</a></li>
+      <li><a href="#collabs">Industry Collaboration</a></li>
+      <li><a href="#impact">Research in Media</a></li>
+		</ul>
+
+		<div class="rightNav">
+			<input type="text" name="search" id="search">
+			<button class="btn btn-sm">Search</button>
+		</div>
+	</nav>
+
+	<section class="firstsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="bio">Bio</h1>
+				<p class="text-small">
+					Ph.D. candidate in Operations Management
+
+          I am a doctoral candidate in Operations Management at Kellogg School of Management. I am on the 2022-2023 job market. I am very fortunate to be advised by Prof. Achal Bassamboo, Prof. Gad Allon, and Prof. Milind Sohoni. My research focuses on problems in service operations with novel business models and strategic agents. I have worked on designing knowledge-sharing platforms where there is no clear separation between consumers and producers (for instance, Question and Answer communities) and online asset-sharing platforms for urban mobility where asset-owners are scarce (for example, highly regulated or developing economies). I enjoy using data to support and build analytical models, I have been collaborating with multiple firms to answer relevant problems with immense potential for social impact.
+				</p>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="secondsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="research">
+					Research
+				</h1>
+				<p class="text-small">
+					My research focuses on analysis of marketplaces using data, stochastic models, and game theory. 
+Published Work
+
+    Payment for Results: Funding Non‐Profit Operations – N. Sharma, S. Devalkar, and M. Sohoni. Production and Operations Management, 2020. [Link to paper].
+
+Working Papers
+
+    Structuring Online Communities – N. Sharma, G. Allon, and A. Bassamboo. Under Minor Review at M&SOM. [Abstract], [slides], [Talk].  
+        Finalist for IBM Service Science Best Student Paper, 2022.
+        Won second place in the Poster competition at CMU Informs YinzOR 2022.
+
+    List now or Later? An equilibrium analysis of advance-booking platforms – N. Sharma, S. Singha, M. Sohoni, and A. Bassamboo. Under Review at Management Science. [Abstract], [slides], [Talk].
+        Finalist for IBM Service Science Best Cluster Paper, 2022.
+        Won second place in the Flash talk competition at CMU Informs YinzOR 2022.
+
+    Scaling sharing platforms with supply constraints with lease-to-earn contracts – N. Sharma, M. Sohoni, and A. Bassamboo. (Under Revision) [Abstract], [slides], [Talk] (previous version).
+
+    Should Ride-sharing platforms manage driver decisions? – N. Sharma, C. Bandi (Under Revision) [Abstract], [slides], [Talk].
+
+    Improving reliability in asset sharing platforms – N. Sharma, M. Sohoni, M. Shukla (Zoomcar India), A. Bassamboo, and S. Roy (Zoomcar India). (Soon to be submitted to INFORMS Applied Analytics)
+
+				</p>
+
+
+			</div>
+		</div>
+	</section>
+  
+  <section class="thirdsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="teaching">Bio</h1>
+				<p class="text-small">
+					Ph.D. candidate in Operations Management
+
+          I am a doctoral candidate in Operations Management at Kellogg School of Management. I am on the 2022-2023 job market. I am very fortunate to be advised by Prof. Achal Bassamboo, Prof. Gad Allon, and Prof. Milind Sohoni. My research focuses on problems in service operations with novel business models and strategic agents. I have worked on designing knowledge-sharing platforms where there is no clear separation between consumers and producers (for instance, Question and Answer communities) and online asset-sharing platforms for urban mobility where asset-owners are scarce (for example, highly regulated or developing economies). I enjoy using data to support and build analytical models, I have been collaborating with multiple firms to answer relevant problems with immense potential for social impact.
+				</p>
+
+
+			</div>
+		</div>
+	</section>
+  
+  <section class="fourthsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="collabs">Bio</h1>
+				<p class="text-small">
+					Ph.D. candidate in Operations Management
+
+          I am a doctoral candidate in Operations Management at Kellogg School of Management. I am on the 2022-2023 job market. I am very fortunate to be advised by Prof. Achal Bassamboo, Prof. Gad Allon, and Prof. Milind Sohoni. My research focuses on problems in service operations with novel business models and strategic agents. I have worked on designing knowledge-sharing platforms where there is no clear separation between consumers and producers (for instance, Question and Answer communities) and online asset-sharing platforms for urban mobility where asset-owners are scarce (for example, highly regulated or developing economies). I enjoy using data to support and build analytical models, I have been collaborating with multiple firms to answer relevant problems with immense potential for social impact.
+				</p>
+
+
+			</div>
+		</div>
+	</section>
+  
+  <section class="fifthsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="impact">Bio</h1>
+				<p class="text-small">
+					Ph.D. candidate in Operations Management
+
+          I am a doctoral candidate in Operations Management at Kellogg School of Management. I am on the 2022-2023 job market. I am very fortunate to be advised by Prof. Achal Bassamboo, Prof. Gad Allon, and Prof. Milind Sohoni. My research focuses on problems in service operations with novel business models and strategic agents. I have worked on designing knowledge-sharing platforms where there is no clear separation between consumers and producers (for instance, Question and Answer communities) and online asset-sharing platforms for urban mobility where asset-owners are scarce (for example, highly regulated or developing economies). I enjoy using data to support and build analytical models, I have been collaborating with multiple firms to answer relevant problems with immense potential for social impact.
+				</p>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="paras">
+			<h1 class="sectionTag text-big">Java</h1>
+
+			<p class="sectionSubTag text-small">
+				Java has been one of the most popular
+				programming language for many years.
+				Java is Object Oriented. However it is
+				not considered as pure object oriented
+				as it provides support for primitive
+				data types (like int, char, etc) The
+				Java codes are first compiled into byte
+				code (machine independent code). Then
+				the byte code is run on Java Virtual
+				Machine (JVM) regardless of the
+				underlying architecture.
+			</p>
+
+
+		</div>
+
+		<div class="thumbnail">
+			<img src= "img.png" alt="laptop image">
+		</div>
+	</section>
+
+	<footer class="background">
+		<p class="text-footer">
+			Copyright ©-All rights are reserved
+		</p>
+
+
+	</footer>
 </body>
+
 </html>
